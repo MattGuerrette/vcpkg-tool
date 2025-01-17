@@ -897,6 +897,10 @@ namespace vcpkg
         {
             return m_paths.scripts / "toolchains/ios.cmake";
         }
+        else if (cmake_system_name == "tvOS")
+        {
+            return m_paths.scripts / "toolchains/tvos.cmake";
+        }
         else if (cmake_system_name == "MinGW")
         {
             return m_paths.scripts / "toolchains/mingw.cmake";
